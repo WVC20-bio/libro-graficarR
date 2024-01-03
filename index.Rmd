@@ -1,82 +1,37 @@
 --- 
 title: "Visualización de gráficas con ggplot2: Ejercicios prácticos"
 author: "William Vilchez Cruz"
-email: wvilchezc@unprg.edu.pe
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
-output: bookdown::gitbook
+output:
+  bookdown::pdf_book:
+    keep_tex: yes
+    highlight: haddock
+  bookdown::html_book:
+    css: toc.css
+    highlight: haddock
+    documentclass: book
+    theme: journal
 documentclass: book
 bibliography: [book.bib, packages.bib]
 description: |
-  Este es un libro práctico para realizar gráficas con ggplot2.
+  Este es un libro práctico para realizar gráficas con el paquete ggplot2.
+sharing:
+      facebook: yes
+      twitter: yes
+      google: yes
+      linkedin: yes
 biblio-style: apalike
 link-citations: yes
 github-repo: rstudio/bookdown-demo
 ---
 
+# Prefacio {-}
 
-# Hablemos sobre R y Rstudio
-
-## R
-
-Juguemos con R y comencemos a editar jugando
-
-R es un __lenguaje de programación__, muy conocido por la mayoría de los científicos.Al ser un lenguaje de programación, podemos generar instrucciones a través de códigos, según el interés del proyecto que esté realizando dicha persona. 
-
-¿Porqué estan famoso R? ¿qué diferencias tiene con otros lenguajes de programación? Actualmente R se ejecuta en casi cualquier plataforma informática, esto se debe a sus peculiares características: 
-
-- Acceso libre (gracias a la licencia Pública General de [GNU](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html))
-- Gran variedad de _paquetes_ que realizan múltiples funciones, por ejemplo, __ggplot2__.
-- Admite varios tipos de datos __homogeneas__(lista, data frame) y __heteregoneas__(vector, matriz, array).
-- No es tan "difícil" aprender R, pero programadores novatos pueden ir aprendiendo ejecuntando __scripts__ (documentos de textos con extensión de archivo __.R__) sencillos. 
-- Debido a su accesibilidad, facilita compartir scripts, por lo tanto, puedes interactuar con personas en internet y solucionar tus problemas al ejecutar tus scripts.
-
-## RStudio
-Es un entorno de desarrollo integrado (`IDE`, por su siglas en inglés: Integrated Development Environment) que permite utilizar lenguaje R, con interfaz interactivo para el usuario. 
-
-## Instalación de R y Rstudio
-Puedes imstalar R en múltiples plataformas disponibles, incluyendo los sistemas operativos Windows, Mac OS X y Linux. Primero, debes dirigirte a [CRAN](https://cloud.r-project.org/) (The Comprehensive R Archive Network) y elegir en que tipo de los sistemas ya mencionados, vas a descargarlo. 
-
-- Widows: https://cran.r-project.org/bin/windows/base/
-- Mac OS X: https://cran.r-project.org/bin/macosx/
-- Linux: https://cran.r-project.org/bin/linux/
-
-CRAN es un repositorio en línea que esta conformado por una serie de servidores web, y es aquí donde se encuentran las versiones de R base, y sus paquetes. 
-Si lograste descagar R, al momento de abrir el programa tendrás una imagen como la Figura \@ref(fig:base) 
-
-
-
-```{r base, echo = FALSE, fig.cap= "_Interfaz de R base_", fig.align='center'}
-knitr::include_graphics(rep("docs/rbase-fig-2.png"))
+```{r, echo = FALSE}
+knitr::include_graphics(rep("_book/docs/portada-fig-1.png"))
 ```
 
-
-Luego debes descargar e instalar Rstudio en su [sitio web](https://posit.co/download/rstudio-desktop/).Cuando ponemos en marcha Rstudio, automáticamente detectará R y podemos utilizarlo con normalidad.
-El entorno de Rstudio es igual a la Figura \@ref(fig:studio) , conformado por tres ventanas. La ventana izquierda estan los __comandos__; la ventana superior derecha se encuentra el __ambiente__ (Environment) que contiene tus variables, además de encontrarse el __historial__ (history); finalmente en la parte inferior derecha se encuentra el __directorio de trabajo__(files), además de __gráficas__ (Plots), __paquetes__(Packages), entre otros. 
+__Objetivos del libro__
 
 
-
-```{r studio, echo = FALSE, fig.cap= "_Interfaz de Rstudio_", fig.align='center'}
-knitr::include_graphics(rep("docs/rstudio-fig-3.png"))
-```
-
-
-
-
-```{r eval=FALSE, echo = FALSE}
-bookdown::serve_book()
-```
-
-
-```{r include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
-
-library(tinytex)
-library(rmarkdown)
-library(bookdown)
-library(blastula)
-
-knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown'
-), 'packages.bib')
-```
