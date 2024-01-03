@@ -18,3 +18,5 @@ sharing-your-book
 publishing
 pages
 metadata-for-sharing
+fig:base
+fig:studio

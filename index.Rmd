@@ -46,9 +46,19 @@ Si lograste descagar R, al momento de abrir el programa tendrás una imagen como
 
 
 
+```{r base, echo = FALSE, fig.cap= "_Interfaz de R base_", fig.align='center'}
+knitr::include_graphics(rep("docs/rbase-fig-2.png"))
+```
+
 
 Luego debes descargar e instalar Rstudio en su [sitio web](https://posit.co/download/rstudio-desktop/).Cuando ponemos en marcha Rstudio, automáticamente detectará R y podemos utilizarlo con normalidad.
 El entorno de Rstudio es igual a la Figura \@ref(fig:studio) , conformado por tres ventanas. La ventana izquierda estan los __comandos__; la ventana superior derecha se encuentra el __ambiente__ (Environment) que contiene tus variables, además de encontrarse el __historial__ (history); finalmente en la parte inferior derecha se encuentra el __directorio de trabajo__(files), además de __gráficas__ (Plots), __paquetes__(Packages), entre otros. 
+
+
+
+```{r studio, echo = FALSE, fig.cap= "_Interfaz de Rstudio_", fig.align='center'}
+knitr::include_graphics(rep("docs/rstudio-fig-3.png"))
+```
 
 
 
