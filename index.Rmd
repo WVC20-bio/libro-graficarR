@@ -19,6 +19,8 @@ github-repo: rstudio/bookdown-demo
 
 ## R
 
+Juguemos con R
+
 R es un __lenguaje de programación__, muy conocido por la mayoría de los científicos.Al ser un lenguaje de programación, podemos generar instrucciones a través de códigos, según el interés del proyecto que esté realizando dicha persona. 
 
 ¿Porqué estan famoso R? ¿qué diferencias tiene con otros lenguajes de programación? Actualmente R se ejecuta en casi cualquier plataforma informática, esto se debe a sus peculiares características: 
