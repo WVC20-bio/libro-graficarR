@@ -1,59 +1,69 @@
 --- 
-title: "A Minimal Book Example"
-author: "John Doe"
+title: "Visualización de gráficas con ggplot2: Ejercicios prácticos"
+author: "William Vilchez Cruz"
+email: wvilchezc@unprg.edu.pe
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
+output: bookdown::gitbook
 documentclass: book
 bibliography: [book.bib, packages.bib]
-# url: your book url like https://bookdown.org/yihui/bookdown
-# cover-image: path to the social sharing image like images/cover.jpg
 description: |
-  This is a minimal example of using the bookdown package to write a book.
-  The HTML output format for this example is bookdown::gitbook,
-  set in the _output.yml file.
+  Este es un libro práctico para realizar gráficas con ggplot2.
+biblio-style: apalike
 link-citations: yes
 github-repo: rstudio/bookdown-demo
 ---
 
-# About
 
-This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports; for example, a math equation $a^2 + b^2 = c^2$.
+# Hablemos sobre R y Rstudio
 
-## Usage 
+## R
 
-Each **bookdown** chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter *must* start with a first-level heading: `# A good chapter`, and can contain one (and only one) first-level heading.
+R es un __lenguaje de programación__, muy conocido por la mayoría de los científicos.Al ser un lenguaje de programación, podemos generar instrucciones a través de códigos, según el interés del proyecto que esté realizando dicha persona. 
 
-Use second-level and higher headings within chapters like: `## A short section` or `### An even shorter section`.
+¿Porqué estan famoso R? ¿qué diferencias tiene con otros lenguajes de programación? Actualmente R se ejecuta en casi cualquier plataforma informática, esto se debe a sus peculiares características: 
 
-The `index.Rmd` file is required, and is also your first book chapter. It will be the homepage when you render the book.
+- Acceso libre (gracias a la licencia Pública General de [GNU](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html))
+- Gran variedad de _paquetes_ que realizan múltiples funciones, por ejemplo, __ggplot2__.
+- Admite varios tipos de datos __homogeneas__(lista, data frame) y __heteregoneas__(vector, matriz, array).
+- No es tan "difícil" aprender R, pero programadores novatos pueden ir aprendiendo ejecuntando __scripts__ (documentos de textos con extensión de archivo __.R__) sencillos. 
+- Debido a su accesibilidad, facilita compartir scripts, por lo tanto, puedes interactuar con personas en internet y solucionar tus problemas al ejecutar tus scripts.
 
-## Render book
+## RStudio
+Es un entorno de desarrollo integrado (`IDE`, por su siglas en inglés: Integrated Development Environment) que permite utilizar lenguaje R, con interfaz interactivo para el usuario. 
 
-You can render the HTML version of this example book without changing anything:
+## Instalación de R y Rstudio
+Puedes imstalar R en múltiples plataformas disponibles, incluyendo los sistemas operativos Windows, Mac OS X y Linux. Primero, debes dirigirte a [CRAN](https://cloud.r-project.org/) (The Comprehensive R Archive Network) y elegir en que tipo de los sistemas ya mencionados, vas a descargarlo. 
 
-1. Find the **Build** pane in the RStudio IDE, and
+- Widows: https://cran.r-project.org/bin/windows/base/
+- Mac OS X: https://cran.r-project.org/bin/macosx/
+- Linux: https://cran.r-project.org/bin/linux/
 
-1. Click on **Build Book**, then select your output format, or select "All formats" if you'd like to use multiple formats from the same book source files.
+CRAN es un repositorio en línea que esta conformado por una serie de servidores web, y es aquí donde se encuentran las versiones de R base, y sus paquetes. 
+Si lograste descagar R, al momento de abrir el programa tendrás una imagen como la Figura \@ref(fig:base) 
 
-Or build the book from the R console:
 
-```{r, eval=FALSE}
-bookdown::render_book()
-```
 
-To render this example to PDF as a `bookdown::pdf_book`, you'll need to install XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.org/tinytex/>.
 
-## Preview book
+Luego debes descargar e instalar Rstudio en su [sitio web](https://posit.co/download/rstudio-desktop/).Cuando ponemos en marcha Rstudio, automáticamente detectará R y podemos utilizarlo con normalidad.
+El entorno de Rstudio es igual a la Figura \@ref(fig:studio) , conformado por tres ventanas. La ventana izquierda estan los __comandos__; la ventana superior derecha se encuentra el __ambiente__ (Environment) que contiene tus variables, además de encontrarse el __historial__ (history); finalmente en la parte inferior derecha se encuentra el __directorio de trabajo__(files), además de __gráficas__ (Plots), __paquetes__(Packages), entre otros. 
 
-As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in "Preview book", or from the R console:
 
-```{r eval=FALSE}
+
+
+```{r eval=FALSE, echo = FALSE}
 bookdown::serve_book()
 ```
 
 
 ```{r include=FALSE}
-# automatically create a bib database for R packages
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+
+library(tinytex)
+library(rmarkdown)
+library(bookdown)
+library(blastula)
+
 knitr::write_bib(c(
   .packages(), 'bookdown', 'knitr', 'rmarkdown'
 ), 'packages.bib')

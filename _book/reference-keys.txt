@@ -19,3 +19,7 @@ sharing-your-book
 publishing
 pages
 metadata-for-sharing
+hablemos-sobre-r-y-rstudio
+r
+rstudio
+instalación-de-r-y-rstudio
