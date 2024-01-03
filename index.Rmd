@@ -19,7 +19,7 @@ github-repo: rstudio/bookdown-demo
 
 ## R
 
-Juguemos con R y comencemos a editar
+Juguemos con R y comencemos a editar jugando
 
 R es un __lenguaje de programación__, muy conocido por la mayoría de los científicos.Al ser un lenguaje de programación, podemos generar instrucciones a través de códigos, según el interés del proyecto que esté realizando dicha persona. 
 
