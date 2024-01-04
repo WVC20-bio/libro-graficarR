@@ -1,5 +1,5 @@
 --- 
-title: "Visualización de gráficas con ggplot2: Ejercicios prácticos"
+title: "Graficando con ggplot2: Ejercicios prácticos"
 author: "William Vilchez Cruz"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
