@@ -22,7 +22,7 @@ Puedes imstalar R en múltiples plataformas disponibles, incluyendo los sistemas
 - Mac OS X: https://cran.r-project.org/bin/macosx/
 - Linux: https://cran.r-project.org/bin/linux/
 
-CRAN es un repositorio en línea que esta conformado por una serie de servidores web, y es aquí donde se encuentran las versiones de R base, y sus paquetes. 
+CRAN es un repositorio en línea que esta conformado por una serie de servidores web, y es aquí donde se encuentran las versiones de R base, y sus paquetes[@peng_r_2014].
 Si lograste descagar R, al momento de abrir el programa tendrás una imagen como la Figura \@ref(fig:base) 
 
 

@@ -1,3 +1,0 @@
-# Graficando con ggplot2
-
-Comenzamos instalar ggplot2

@@ -1,0 +1,34 @@
+# El Tidyverso 
+
+"Tidyverso" proviene de la palabra en inglés `Tidyverse`, y a su vez el prefijo "tidy", significa _ordenado_. `Tidyverse` esta conformado por un __grupo de paquetes__ que comparten una misma filosofía acerca de los datos y programación en R [@tidy-data;@wickham_welcome_2019].
+
+Los paquetes que conforman al `Tidyverse` son readr, dplyr, tidyr, ggplot2, purrr, forcats, stringr, lubridate y tibble. Cada uno de estos paquetes mencionados se instalarán automáticamente al instalar el paquete __tidyverse__. 
+
+```{r, echo=TRUE, warning=FALSE, error=TRUE}
+library(tidyverse)
+```
+
+Ahora hablaremos algunos de estos paquetes, ya que el objetivo del libro no es basarnos en hablar sobre el mundo del tidyverso, si no, de un paquete específico que es ggplot2. En la parte 2 y sección 5 de este libro electrónico (https://bookdown.org/ansellbr/WEHI_tidyR_course_book/manipulating-data-with-dplyr.html), puede ayudarte a entender un poco más sobre su funcionalidad de dichos paquetes, ya mencionados. 
+
+## readr
+
+Este paquete permite importar y exportar distintos tipos de archivos. Si lo menciono primero, es porque lo estaremos utilizando muchas veces para leer nuestros datos. Si queremos importar un dato utilizaremos la función `read_"el tipo de dato" (csv, tsv, log, etc.)`, pero si queremos exportar ese mismo dato utilizaremos la función `write_"el tipo de dato" (csv, tsv, etc.)` [@wickham2023r].
+
+## dplyr
+
+Es un paquete de múltiples funciones que actúan en la manipulación de datos. Dichas funciones se les conocen como "verbos", que pueden juntarse para obtener un resultado de interés. 
+
+Estos "verbos" son 
+
+- __select:__ Selecciona columnas, es decir las variables de tus datos.
+- __filter:__ Si el anterior seleccionaba filas, esta función se encarga de seleccionar un subconjunto de filas, según la condición que le indiques. Aquí se utilizan `operadores lógicos` (&,!) y `operadores relacionales` (<, >, ==).
+- __arrange:__ Permite reordenar las filas para cierta variable. 
+- __rename:__
+- __mutate:__
+- __summarise:__
+- __pipeline (%>%):__
+
+
+
+
+
