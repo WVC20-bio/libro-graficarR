@@ -16,7 +16,7 @@ Este paquete permite importar y exportar distintos tipos de archivos. Si lo menc
 
 ## dplyr
 
-Es un paquete de múltiples funciones que actúan en la manipulación de datos. Dichas funciones se les conocen como "verbos", que pueden juntarse para obtener un resultado de interés. 
+Es un paquete de múltiples funciones que actúan en la manipulación de datos. Dichas funciones se les conocen como "verbos", que pueden juntarse para obtener un resultado de interés[@peng_r_2014]. 
 
 Estos "verbos" son 
 
