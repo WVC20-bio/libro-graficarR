@@ -34,4 +34,9 @@ knitr::include_graphics(rep("_book/docs/portada-fig-1.png"))
 
 __Objetivos del libro__
 
+Este libro tiene la intención de servir como guía didáctica y puntual, para generar gráficos usualmente utilizados en el mundo académico. Al inicio del libro, hablaremos sobre conceptos básicos sobre lenguaje de programación R, tidyverse y su colección de paquetes, sin embargo, nos centraremos especialmente en el uso de ggplot2. Finalmente, quiero recoemnedar que si no has trabajado en `R` antes, sería bueno que leyeras estos libros: 
+
+- Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). R for data science. " O'Reilly Media, Inc. https://r4ds.hadley.nz/
+
+
 
