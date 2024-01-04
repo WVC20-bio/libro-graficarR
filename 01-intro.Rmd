@@ -2,7 +2,7 @@
 
 ## R
 
-R es un __lenguaje de programación__, muy conocido por la mayoría de los científicos.Al ser un lenguaje de programación, podemos generar instrucciones a través de códigos, según el interés del proyecto que esté realizando dicha persona. 
+R es un __lenguaje de programación__, muy conocido por la mayoría de los científicos.Al ser un lenguaje de programación, podemos generar instrucciones a través de códigos, según el interés del proyecto que esté realizando dicha persona[@vega_r_nodate;@peng_r_2014].
 
 ¿Porqué estan famoso R? ¿qué diferencias tiene con otros lenguajes de programación? Actualmente R se ejecuta en casi cualquier plataforma informática, esto se debe a sus peculiares características: 
 
@@ -13,7 +13,7 @@ R es un __lenguaje de programación__, muy conocido por la mayoría de los cient
 - Debido a su accesibilidad, facilita compartir scripts, por lo tanto, puedes interactuar con personas en internet y solucionar tus problemas al ejecutar tus scripts.
 
 ## RStudio
-Es un entorno de desarrollo integrado (`IDE`, por su siglas en inglés: Integrated Development Environment) que permite utilizar lenguaje R, con interfaz interactivo para el usuario. 
+Es un entorno de desarrollo integrado (`IDE`, por su siglas en inglés: Integrated Development Environment) que permite utilizar lenguaje R, con interfaz interactivo para el usuario[@wickham2023r]. 
 
 ## Instalación de R y Rstudio
 Puedes imstalar R en múltiples plataformas disponibles, incluyendo los sistemas operativos Windows, Mac OS X y Linux. Primero, debes dirigirte a [CRAN](https://cloud.r-project.org/) (The Comprehensive R Archive Network) y elegir en que tipo de los sistemas ya mencionados, vas a descargarlo. 

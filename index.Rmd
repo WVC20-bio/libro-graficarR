@@ -13,7 +13,8 @@ output:
     documentclass: book
     theme: journal
 documentclass: book
-bibliography: [book.bib, packages.bib]
+bibliography: [book.bib, packages.bib, ref.bib]
+csl: apa.csl
 description: |
   Este es un libro práctico para realizar gráficas con el paquete ggplot2.
 sharing:
@@ -21,7 +22,6 @@ sharing:
       twitter: yes
       google: yes
       linkedin: yes
-biblio-style: apalike
 link-citations: yes
 github-repo: rstudio/bookdown-demo
 ---

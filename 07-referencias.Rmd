@@ -1,0 +1,4 @@
+`r if (knitr::is_html_output()) '
+# Referencias {-}
+'`
+Vega, Juan Bosco Mendoza. 2018. R para principiantes. https://bookdown.org/jboscomendoza/r-principiantes4/.
