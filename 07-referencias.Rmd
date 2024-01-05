@@ -5,5 +5,15 @@ Peng, R. D. (2016). _R programming for data science_ (pp. 86–181). Leanpub. ht
 
 Vega, J. B. M. (2018). _R para principiantes_. https://bookdown.org/jboscomendoza/r-principiantes4/
 
+Wickham, H. (2014). Tidy data. The Journal of Statistical Software, 59. http://www.jstatsoft.org/v59/i10/
+
+Wickham, H., Averick, M., Bryan, J., Chang, W., McGowan, L., François, R., Grolemund, G., Hayes, A., Henry, L., Hester, J., Kuhn, M., Pedersen, T., Miller, E., Bache, S., Müller, K., Ooms, J., Robinson, D., Seidel, D., Spinu, V., … Yutani, H. (2019). Welcome to the tidyverse. Journal of Open Source Software, 4(43), 1686. https://doi.org/10.21105/joss.01686
+
 Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). _R for data science (Second)_. " O’Reilly Media, Inc.". https://r4ds.hadley.nz/
+
+Wickham, H., & Henry, L. (2023). Purrr: Functional programming tools. https://purrr.tidyverse.org/
+
+Xie, Yihui. 2015. Dynamic Documents with R and Knitr. 2nd ed. Boca Raton, Florida: Chapman; Hall/CRC. http://yihui.org/knitr/.
+———. 2023. Bookdown: Authoring Books and Technical Documents with r Markdown. https://github.com/rstudio/bookdown.
+
 
