@@ -23,7 +23,7 @@
 <meta name="author" content="William Vilchez Cruz" />
 
 
-<meta name="date" content="2024-01-04" />
+<meta name="date" content="2024-01-05" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -109,7 +109,12 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="2.1" data-path="el-tidyverso.html"><a href="el-tidyverso.html#readr"><i class="fa fa-check"></i><b>2.1</b> readr</a></li>
 <li class="chapter" data-level="2.2" data-path="el-tidyverso.html"><a href="el-tidyverso.html#dplyr"><i class="fa fa-check"></i><b>2.2</b> dplyr</a></li>
+<li class="chapter" data-level="2.3" data-path="el-tidyverso.html"><a href="el-tidyverso.html#tidyr"><i class="fa fa-check"></i><b>2.3</b> tidyr</a></li>
+<li class="chapter" data-level="2.4" data-path="el-tidyverso.html"><a href="el-tidyverso.html#purrr"><i class="fa fa-check"></i><b>2.4</b> purrr</a></li>
+<li class="chapter" data-level="2.5" data-path="el-tidyverso.html"><a href="el-tidyverso.html#tibbles"><i class="fa fa-check"></i><b>2.5</b> tibbles</a></li>
+<li class="chapter" data-level="2.6" data-path="el-tidyverso.html"><a href="el-tidyverso.html#ggplot2"><i class="fa fa-check"></i><b>2.6</b> ggplot2</a></li>
 </ul></li>
+<li class="chapter" data-level="3" data-path="comencemos-a-graficar-con-ggplot2.html"><a href="comencemos-a-graficar-con-ggplot2.html"><i class="fa fa-check"></i><b>3</b> ¡Comencemos a graficar con ggplot2!</a></li>
 <li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referencias</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -147,7 +152,7 @@ div.csl-indent {
 </div>
 <div id="rstudio" class="section level2 hasAnchor" number="1.2">
 <h2><span class="header-section-number">1.2</span> RStudio<a href="hablemos-sobre-r-y-rstudio.html#rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Es un entorno de desarrollo integrado (<code>IDE</code>, por su siglas en inglés: Integrated Development Environment) que permite utilizar lenguaje R, con interfaz interactivo para el usuario<span class="citation">(<a href="#ref-wickham2023r" role="doc-biblioref">Wickham et al., 2023</a>)</span>.</p>
+<p>Es un entorno de desarrollo integrado (<code>IDE</code>, por su siglas en inglés: Integrated Development Environment) que permite utilizar lenguaje R, con interfaz interactivo para el usuario<span class="citation">(<a href="#ref-wickham2023r" role="doc-biblioref">Wickham, Çetinkaya-Rundel, et al., 2023</a>)</span>.</p>
 </div>
 <div id="instalación-de-r-y-rstudio" class="section level2 hasAnchor" number="1.3">
 <h2><span class="header-section-number">1.3</span> Instalación de R y Rstudio<a href="hablemos-sobre-r-y-rstudio.html#instalación-de-r-y-rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -160,7 +165,7 @@ div.csl-indent {
 <p>CRAN es un repositorio en línea que esta conformado por una serie de servidores web, y es aquí donde se encuentran las versiones de R base, y sus paquetes<span class="citation">(<a href="#ref-peng_r_2014" role="doc-biblioref">Peng, 2016</a>)</span>.
 Si lograste descagar R, al momento de abrir el programa tendrás una imagen como la Figura <a href="hablemos-sobre-r-y-rstudio.html#fig:base">1.1</a></p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:base"></span>
-<img src="_book/docs/rbase-fig-2.png" alt="_Interfaz de R base_" width="3794" />
+<img src="docs/docs/rbase-fig-2.png" alt="_Interfaz de R base_" width="3794" />
 <p class="caption">
 Figure 1.1: <em>Interfaz de R base</em>
 </p>
@@ -168,7 +173,7 @@ Figure 1.1: <em>Interfaz de R base</em>
 <p>Luego debes descargar e instalar Rstudio en su <a href="https://posit.co/download/rstudio-desktop/">sitio web</a>.Cuando ponemos en marcha Rstudio, automáticamente detectará R y podemos utilizarlo con normalidad.
 El entorno de Rstudio es igual a la Figura <a href="hablemos-sobre-r-y-rstudio.html#fig:studio">1.2</a> , conformado por tres ventanas. La ventana izquierda estan los <strong>comandos</strong>; la ventana superior derecha se encuentra el <strong>ambiente</strong> (Environment) que contiene tus variables, además de encontrarse el <strong>historial</strong> (history); finalmente en la parte inferior derecha se encuentra el <strong>directorio de trabajo</strong>(files), además de <strong>gráficas</strong> (Plots), <strong>paquetes</strong>(Packages), entre otros.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:studio"></span>
-<img src="_book/docs/rstudio-fig-3.png" alt="_Interfaz de Rstudio_" width="3794" />
+<img src="docs/docs/rstudio-fig-3.png" alt="_Interfaz de Rstudio_" width="3794" />
 <p class="caption">
 Figure 1.2: <em>Interfaz de Rstudio</em>
 </p>
