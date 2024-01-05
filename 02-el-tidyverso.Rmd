@@ -48,7 +48,7 @@ Es uno de los paquetes del tidyverso que te permite generar `gráficos elegantes
 
 
 ```{r temple, echo = FALSE, fig.cap= "_Gramática de gráficos de ggplot2_", fig.align='center'}
-knitr::include_graphics(rep("_book/docs/temple-fig-4.png"))
+knitr::include_graphics(rep("docs/docs/temple-fig-4.png"))
 ```
 
 Te cuento una __curiosidad__, el paquete ggplot2 tiene dos funciones para crear gráficos que son `qplot()` y `ggplot()`, sin embargo, en este libro utilizaremos `ggplot()`, porque es más flexible y a la vez robusto para generar los gráficos. 

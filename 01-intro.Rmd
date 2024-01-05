@@ -28,7 +28,7 @@ Si lograste descagar R, al momento de abrir el programa tendrás una imagen como
 
 
 ```{r base, echo = FALSE, fig.cap= "_Interfaz de R base_", fig.align='center'}
-knitr::include_graphics(rep("_book/docs/rbase-fig-2.png"))
+knitr::include_graphics(rep("docs/docs/rbase-fig-2.png"))
 ```
 
 
@@ -38,6 +38,6 @@ El entorno de Rstudio es igual a la Figura \@ref(fig:studio) , conformado por tr
 
 
 ```{r studio, echo = FALSE, fig.cap= "_Interfaz de Rstudio_", fig.align='center'}
-knitr::include_graphics(rep("_book/docs/rstudio-fig-3.png"))
+knitr::include_graphics(rep("docs/docs/rstudio-fig-3.png"))
 ```
 
