@@ -42,8 +42,16 @@ Genera bucles(`loops`) a travez de la familia de funciones llamadas __map()__. E
 Es un _data frame_ pero modernizado y mejorado. Las ventajas con la data frame es que nunca altera el tipo de entrada, los vectores de tipo cadena de texto no esta obligado a cambiar al tipo factor, muestra las primeras filas y todas las columnas de tus datos, entre otras carácterísticas [@wickham2023r].
 
 
+## ggplot2
+
+Es uno de los paquetes del tidyverso que te permite generar `gráficos elegantes` y `manejables`. Su popularidad se debe a que todos los gráficos se generan a travez de un sistema coherente conocido como la __gramática de gráficos__ [@wickham2023r]. Esta "gramática de gráficos" es como una plantilla `ordenada`, y si resaltó esta última palabra es porque ggplot2 genera las figuras mediante __capas__ (Figura \@ref(fig:temple)). 
 
 
+```{r temple, echo = FALSE, fig.cap= "_Gramática de gráficos de ggplot2_", fig.align='center'}
+knitr::include_graphics(rep("_book/docs/temple-fig-4.png"))
+```
+
+Te cuento una __curiosidad__, el paquete ggplot2 tiene dos funciones para crear gráficos que son `qplot()` y `ggplot()`, sin embargo, en este libro utilizaremos `ggplot()`, porque es más flexible y a la vez robusto para generar los gráficos. 
 
 
 

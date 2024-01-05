@@ -23,7 +23,7 @@
 <meta name="author" content="William Vilchez Cruz" />
 
 
-<meta name="date" content="2024-01-04" />
+<meta name="date" content="2024-01-05" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -176,6 +176,7 @@ div.csl-indent {
 <li class="chapter" data-level="2.3" data-path="el-tidyverso.html"><a href="el-tidyverso.html#tidyr"><i class="fa fa-check"></i><b>2.3</b> tidyr</a></li>
 <li class="chapter" data-level="2.4" data-path="el-tidyverso.html"><a href="el-tidyverso.html#purrr"><i class="fa fa-check"></i><b>2.4</b> purrr</a></li>
 <li class="chapter" data-level="2.5" data-path="el-tidyverso.html"><a href="el-tidyverso.html#tibbles"><i class="fa fa-check"></i><b>2.5</b> tibbles</a></li>
+<li class="chapter" data-level="2.6" data-path="el-tidyverso.html"><a href="el-tidyverso.html#ggplot2"><i class="fa fa-check"></i><b>2.6</b> ggplot2</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referencias</a></li>
 <li class="divider"></li>
@@ -200,7 +201,7 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="el-tidyverso" class="section level1 hasAnchor" number="2">
 <h1><span class="header-section-number">Capítulo 2</span> El Tidyverso<a href="el-tidyverso.html#el-tidyverso" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>“Tidyverso” proviene de la palabra en inglés <code>Tidyverse</code>, y a su vez el prefijo “tidy”, significa <em>ordenado</em>. <code>Tidyverse</code> esta conformado por un <strong>grupo de paquetes</strong> que comparten una misma filosofía acerca de los datos y programación en R <span class="citation">(<a href="#ref-tidy-data" role="doc-biblioref">Wickham, 2014</a>; <a href="#ref-wickham_welcome_2019" role="doc-biblioref">Wickham et al., 2019</a>)</span>.</p>
+<p>“Tidyverso” proviene de la palabra en inglés <code>Tidyverse</code>, y a su vez el prefijo “tidy”, significa <em>ordenado</em>. <code>Tidyverse</code> esta conformado por un <strong>grupo de paquetes</strong> que comparten una misma filosofía acerca de los datos y programación en R <span class="citation">(<a href="#ref-tidy-data" role="doc-biblioref">Wickham, 2014</a>; <a href="#ref-wickham_welcome_2019" role="doc-biblioref">Wickham et al., 2019b</a>)</span>.</p>
 <p>Los paquetes que conforman al <code>Tidyverse</code> son readr, dplyr, tidyr, ggplot2, purrr, forcats, stringr, lubridate y tibble. Cada uno de estos paquetes mencionados se instalarán automáticamente al instalar el paquete <strong>tidyverse</strong>.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="el-tidyverso.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div>
 <pre><code>## ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
@@ -234,15 +235,26 @@ div.csl-indent {
 </div>
 <div id="tidyr" class="section level2 hasAnchor" number="2.3">
 <h2><span class="header-section-number">2.3</span> tidyr<a href="el-tidyverso.html#tidyr" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Permite crear datos ordenados, siendo las funciones principales <code>pivot_longer</code> y <code>pivot_wider</code>. La primera función transforma un dato ancho a uno largo, en cambio la otra función hace lo contrario<span class="citation">(<a href="#ref-tidyr" role="doc-biblioref">Wickham, Vaughan, et al., 2023</a>)</span>.</p>
+<p>Permite crear datos ordenados, siendo las funciones principales <code>pivot_longer</code> y <code>pivot_wider</code>. La primera función transforma un dato ancho a uno largo, en cambio la otra función hace lo contrario<span class="citation">(<a href="#ref-tidyr" role="doc-biblioref">Wickham, Vaughan, et al., 2023a</a>)</span>.</p>
 </div>
 <div id="purrr" class="section level2 hasAnchor" number="2.4">
 <h2><span class="header-section-number">2.4</span> purrr<a href="el-tidyverso.html#purrr" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Genera bucles(<code>loops</code>) a travez de la familia de funciones llamadas <strong>map()</strong>. Estos bucles ayudan a realizar una acción de interés múltiples veces, generados por la computadora <span class="citation">(<a href="#ref-purr" role="doc-biblioref">Wickham &amp; Henry, 2023</a>)</span>.</p>
+<p>Genera bucles(<code>loops</code>) a travez de la familia de funciones llamadas <strong>map()</strong>. Estos bucles ayudan a realizar una acción de interés múltiples veces, generados por la computadora <span class="citation">(<a href="#ref-purr" role="doc-biblioref">Wickham &amp; Henry, 2023a</a>)</span>.</p>
 </div>
 <div id="tibbles" class="section level2 hasAnchor" number="2.5">
 <h2><span class="header-section-number">2.5</span> tibbles<a href="el-tidyverso.html#tibbles" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Es un <em>data frame</em> pero modernizado y mejorado. Las ventajas con la data frame es que nunca altera el tipo de entrada, los vectores de tipo cadena de texto no esta obligado a cambiar al tipo factor, muestra las primeras filas y todas las columnas de tus datos, entre otras carácterísticas <span class="citation">(<a href="#ref-wickham2023r" role="doc-biblioref">Wickham, Çetinkaya-Rundel, et al., 2023</a>)</span>.</p>
+</div>
+<div id="ggplot2" class="section level2 hasAnchor" number="2.6">
+<h2><span class="header-section-number">2.6</span> ggplot2<a href="el-tidyverso.html#ggplot2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Es uno de los paquetes del tidyverso que te permite generar <code>gráficos elegantes</code> y <code>manejables</code>. Su popularidad se debe a que todos los gráficos se generan a travez de un sistema coherente conocido como la <strong>gramática de gráficos</strong> <span class="citation">(<a href="#ref-wickham2023r" role="doc-biblioref">Wickham, Çetinkaya-Rundel, et al., 2023</a>)</span>. Esta “gramática de gráficos” es como una plantilla <code>ordenada</code>, y si resaltó esta última palabra es porque ggplot2 genera las figuras mediante <strong>capas</strong> (Figura <a href="el-tidyverso.html#fig:temple">2.1</a>).</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:temple"></span>
+<img src="_book/docs/temple-fig-4.png" alt="_Gramática de gráficos de ggplot2_" width="4265" />
+<p class="caption">
+Figure 2.1: <em>Gramática de gráficos de ggplot2</em>
+</p>
+</div>
+<p>Te cuento una <strong>curiosidad</strong>, el paquete ggplot2 tiene dos funciones para crear gráficos que son <code>qplot()</code> y <code>ggplot()</code>, sin embargo, en este libro utilizaremos <code>ggplot()</code>, porque es más flexible y a la vez robusto para generar los gráficos.</p>
 
 </div>
 </div>
@@ -255,16 +267,16 @@ Peng, R. D. (2016). <em><span class="nocase">R programming for data science</spa
 Wickham, H. (2014). Tidy data. <em>The Journal of Statistical Software</em>, <em>59</em>. <a href="http://www.jstatsoft.org/v59/i10/">http://www.jstatsoft.org/v59/i10/</a>
 </div>
 <div id="ref-wickham_welcome_2019" class="csl-entry">
-Wickham, H., Averick, M., Bryan, J., Chang, W., McGowan, L., François, R., Grolemund, G., Hayes, A., Henry, L., Hester, J., Kuhn, M., Pedersen, T., Miller, E., Bache, S., Müller, K., Ooms, J., Robinson, D., Seidel, D., Spinu, V., … Yutani, H. (2019). <span class="nocase">Welcome to the tidyverse</span>. <em>Journal of Open Source Software</em>, <em>4</em>(43), 1686. <a href="https://doi.org/10.21105/joss.01686">https://doi.org/10.21105/joss.01686</a>
+Wickham, H., Averick, M., Bryan, J., Chang, W., McGowan, L., François, R., Grolemund, G., Hayes, A., Henry, L., Hester, J., Kuhn, M., Pedersen, T., Miller, E., Bache, S., Müller, K., Ooms, J., Robinson, D., Seidel, D., Spinu, V., … Yutani, H. (2019b). <span class="nocase">Welcome to the tidyverse</span>. <em>Journal of Open Source Software</em>, <em>4</em>(43), 1686. <a href="https://doi.org/10.21105/joss.01686">https://doi.org/10.21105/joss.01686</a>
 </div>
 <div id="ref-wickham2023r" class="csl-entry">
 Wickham, H., Çetinkaya-Rundel, M., &amp; Grolemund, G. (2023). <em><span class="nocase">R for data science</span></em> (Second). " O’Reilly Media, Inc.". <a href="https://r4ds.hadley.nz/">https://r4ds.hadley.nz/</a>
 </div>
 <div id="ref-purr" class="csl-entry">
-Wickham, H., &amp; Henry, L. (2023). <em>Purrr: Functional programming tools</em>. <a href="https://purrr.tidyverse.org/">https://purrr.tidyverse.org/</a>
+Wickham, H., &amp; Henry, L. (2023a). <em>Purrr: Functional programming tools</em>. <a href="https://purrr.tidyverse.org/">https://purrr.tidyverse.org/</a>
 </div>
 <div id="ref-tidyr" class="csl-entry">
-Wickham, H., Vaughan, D., &amp; Girlich, M. (2023). <em>Tidyr: Tidy messy data</em>. <a href="https://tidyr.tidyverse.org">https://tidyr.tidyverse.org</a>
+Wickham, H., Vaughan, D., &amp; Girlich, M. (2023a). <em>Tidyr: Tidy messy data</em>. <a href="https://tidyr.tidyverse.org">https://tidyr.tidyverse.org</a>
 </div>
 </div>
             </section>

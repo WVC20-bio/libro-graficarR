@@ -1,0 +1,3 @@
+casos_COVID19_cajamarca:https://www.datosabiertos.gob.pe/dataset/casos-covid-19-en-la-regi%C3%B3n-de-cajamarca-gobierno-regional-de-cajamarca-6
+
+accidente2020_2021_sutran: https://www.datosabiertos.gob.pe/dataset/accidentes-de-tr%C3%A1nsito-en-carreteras

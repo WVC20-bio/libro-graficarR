@@ -41,24 +41,3 @@ El entorno de Rstudio es igual a la Figura \@ref(fig:studio) , conformado por tr
 knitr::include_graphics(rep("_book/docs/rstudio-fig-3.png"))
 ```
 
-
-
-
-```{r eval=FALSE, echo = FALSE}
-bookdown::serve_book()
-```
-
-
-```{r include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
-
-library(tinytex)
-library(rmarkdown)
-library(bookdown)
-library(blastula)
-
-knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown'
-), 'packages.bib')
-```
-

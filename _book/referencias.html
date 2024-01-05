@@ -23,14 +23,14 @@
 <meta name="author" content="William Vilchez Cruz" />
 
 
-<meta name="date" content="2024-01-04" />
+<meta name="date" content="2024-01-05" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="el-tidyverso.html"/>
+<link rel="prev" href="comencemos-a-graficar-con-ggplot2.html"/>
 
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -58,6 +58,28 @@
 <style type="text/css">
   
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -89,7 +111,10 @@
 <li class="chapter" data-level="2.2" data-path="el-tidyverso.html"><a href="el-tidyverso.html#dplyr"><i class="fa fa-check"></i><b>2.2</b> dplyr</a></li>
 <li class="chapter" data-level="2.3" data-path="el-tidyverso.html"><a href="el-tidyverso.html#tidyr"><i class="fa fa-check"></i><b>2.3</b> tidyr</a></li>
 <li class="chapter" data-level="2.4" data-path="el-tidyverso.html"><a href="el-tidyverso.html#purrr"><i class="fa fa-check"></i><b>2.4</b> purrr</a></li>
+<li class="chapter" data-level="2.5" data-path="el-tidyverso.html"><a href="el-tidyverso.html#tibbles"><i class="fa fa-check"></i><b>2.5</b> tibbles</a></li>
+<li class="chapter" data-level="2.6" data-path="el-tidyverso.html"><a href="el-tidyverso.html#ggplot2"><i class="fa fa-check"></i><b>2.6</b> ggplot2</a></li>
 </ul></li>
+<li class="chapter" data-level="3" data-path="comencemos-a-graficar-con-ggplot2.html"><a href="comencemos-a-graficar-con-ggplot2.html"><i class="fa fa-check"></i><b>3</b> ¡Comencemos a graficar con ggplot2!</a></li>
 <li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referencias</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -119,16 +144,118 @@
 <p>Wickham, H., Averick, M., Bryan, J., Chang, W., McGowan, L., François, R., Grolemund, G., Hayes, A., Henry, L., Hester, J., Kuhn, M., Pedersen, T., Miller, E., Bache, S., Müller, K., Ooms, J., Robinson, D., Seidel, D., Spinu, V., … Yutani, H. (2019). Welcome to the tidyverse. Journal of Open Source Software, 4(43), 1686. <a href="https://doi.org/10.21105/joss.01686" class="uri">https://doi.org/10.21105/joss.01686</a></p>
 <p>Wickham, H., Çetinkaya-Rundel, M., &amp; Grolemund, G. (2023). <em>R for data science (Second)</em>. ” O’Reilly Media, Inc.”. <a href="https://r4ds.hadley.nz/" class="uri">https://r4ds.hadley.nz/</a></p>
 <p>Wickham, H., &amp; Henry, L. (2023). Purrr: Functional programming tools. <a href="https://purrr.tidyverse.org/" class="uri">https://purrr.tidyverse.org/</a></p>
+<p>Wickham, H., Vaughan, D., &amp; Girlich, M. (2023). Tidyr: Tidy messy data. <a href="https://tidyr.tidyverse.org" class="uri">https://tidyr.tidyverse.org</a></p>
 <p>Xie, Yihui. 2015. Dynamic Documents with R and Knitr. 2nd ed. Boca Raton, Florida: Chapman; Hall/CRC. <a href="http://yihui.org/knitr/" class="uri">http://yihui.org/knitr/</a>.
 ———. 2023. Bookdown: Authoring Books and Technical Documents with r Markdown. <a href="https://github.com/rstudio/bookdown" class="uri">https://github.com/rstudio/bookdown</a>.</p>
 
+<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
+<div class="csl-entry">
+Allaire, J., Xie, Y., Dervieux, C., McPherson, J., Luraschi, J., Ushey, K., Atkins, A., Wickham, H., Cheng, J., Chang, W., &amp; Iannone, R. (2023). <em>Rmarkdown: Dynamic documents for r</em>. <a href="https://github.com/rstudio/rmarkdown">https://github.com/rstudio/rmarkdown</a>
+</div>
+<div class="csl-entry">
+Grolemund, G., &amp; Wickham, H. (2011). Dates and times made easy with <span class="nocase">lubridate</span>. <em>Journal of Statistical Software</em>, <em>40</em>(3), 1–25. <a href="https://www.jstatsoft.org/v40/i03/">https://www.jstatsoft.org/v40/i03/</a>
+</div>
+<div class="csl-entry">
+Müller, K., &amp; Wickham, H. (2023). <em>Tibble: Simple data frames</em>. <a href="https://tibble.tidyverse.org/">https://tibble.tidyverse.org/</a>
+</div>
+<div class="csl-entry">
+Peng, R. D. (2016). <em><span class="nocase">R programming for data science</span></em> (pp. 86–181). Leanpub. <a href="http://leanpub.next/rprogramming">http://leanpub.next/rprogramming</a>
+</div>
+<div class="csl-entry">
+Quiroga, R., Ruiz, E., Vargas, M., &amp; Lepore, M. (2023). <em>Datos: Traduce al español varios conjuntos de datos de práctica</em>. <a href="https://github.com/cienciadedatos/datos">https://github.com/cienciadedatos/datos</a>
+</div>
+<div class="csl-entry">
+R Core Team. (2022). <em>R: A language and environment for statistical computing</em>. R Foundation for Statistical Computing. <a href="https://www.R-project.org/">https://www.R-project.org/</a>
+</div>
+<div class="csl-entry">
+Ripley, B. (2023). <em>MASS: Support functions and datasets for venables and ripley’s MASS</em>. <a href="http://www.stats.ox.ac.uk/pub/MASS4/">http://www.stats.ox.ac.uk/pub/MASS4/</a>
+</div>
+<div class="csl-entry">
+Spinu, V., Grolemund, G., &amp; Wickham, H. (2023). <em>Lubridate: Make dealing with dates a little easier</em>. <a href="https://lubridate.tidyverse.org">https://lubridate.tidyverse.org</a>
+</div>
+<div class="csl-entry">
+Vega, J. B. M. (2018). <em><span class="nocase">R para principiantes</span></em>. <a href="https://bookdown.org/jboscomendoza/r-principiantes4/">https://bookdown.org/jboscomendoza/r-principiantes4/</a>
+</div>
+<div class="csl-entry">
+Venables, W. N., &amp; Ripley, B. D. (2002). <em>Modern applied statistics with s</em> (Fourth). Springer. <a href="https://www.stats.ox.ac.uk/pub/MASS4/">https://www.stats.ox.ac.uk/pub/MASS4/</a>
+</div>
+<div class="csl-entry">
+Wickham, H. (2014). Tidy data. <em>The Journal of Statistical Software</em>, <em>59</em>. <a href="http://www.jstatsoft.org/v59/i10/">http://www.jstatsoft.org/v59/i10/</a>
+</div>
+<div class="csl-entry">
+Wickham, H. (2016). <em>ggplot2: Elegant graphics for data analysis</em>. Springer-Verlag New York. <a href="https://ggplot2.tidyverse.org">https://ggplot2.tidyverse.org</a>
+</div>
+<div class="csl-entry">
+Wickham, H. (2023a). <em>Forcats: Tools for working with categorical variables (factors)</em>. <a href="https://forcats.tidyverse.org/">https://forcats.tidyverse.org/</a>
+</div>
+<div class="csl-entry">
+Wickham, H. (2023b). <em>Stringr: Simple, consistent wrappers for common string operations</em>. <a href="https://stringr.tidyverse.org">https://stringr.tidyverse.org</a>
+</div>
+<div class="csl-entry">
+Wickham, H. (2023c). <em>Tidyverse: Easily install and load the tidyverse</em>. <a href="https://tidyverse.tidyverse.org">https://tidyverse.tidyverse.org</a>
+</div>
+<div class="csl-entry">
+Wickham, H., Averick, M., Bryan, J., Chang, W., McGowan, L. D., François, R., Grolemund, G., Hayes, A., Henry, L., Hester, J., Kuhn, M., Pedersen, T. L., Miller, E., Bache, S. M., Müller, K., Ooms, J., Robinson, D., Seidel, D. P., Spinu, V., … Yutani, H. (2019a). Welcome to the <span class="nocase">tidyverse</span>. <em>Journal of Open Source Software</em>, <em>4</em>(43), 1686. <a href="https://doi.org/10.21105/joss.01686">https://doi.org/10.21105/joss.01686</a>
+</div>
+<div class="csl-entry">
+Wickham, H., Averick, M., Bryan, J., Chang, W., McGowan, L., François, R., Grolemund, G., Hayes, A., Henry, L., Hester, J., Kuhn, M., Pedersen, T., Miller, E., Bache, S., Müller, K., Ooms, J., Robinson, D., Seidel, D., Spinu, V., … Yutani, H. (2019b). <span class="nocase">Welcome to the tidyverse</span>. <em>Journal of Open Source Software</em>, <em>4</em>(43), 1686. <a href="https://doi.org/10.21105/joss.01686">https://doi.org/10.21105/joss.01686</a>
+</div>
+<div class="csl-entry">
+Wickham, H., Çetinkaya-Rundel, M., &amp; Grolemund, G. (2023). <em><span class="nocase">R for data science</span></em> (Second). " O’Reilly Media, Inc.". <a href="https://r4ds.hadley.nz/">https://r4ds.hadley.nz/</a>
+</div>
+<div class="csl-entry">
+Wickham, H., Chang, W., Henry, L., Pedersen, T. L., Takahashi, K., Wilke, C., Woo, K., Yutani, H., &amp; Dunnington, D. (2023). <em>ggplot2: Create elegant data visualisations using the grammar of graphics</em>. <a href="https://ggplot2.tidyverse.org">https://ggplot2.tidyverse.org</a>
+</div>
+<div class="csl-entry">
+Wickham, H., François, R., Henry, L., Müller, K., &amp; Vaughan, D. (2023). <em>Dplyr: A grammar of data manipulation</em>. <a href="https://dplyr.tidyverse.org">https://dplyr.tidyverse.org</a>
+</div>
+<div class="csl-entry">
+Wickham, H., &amp; Henry, L. (2023a). <em>Purrr: Functional programming tools</em>. <a href="https://purrr.tidyverse.org/">https://purrr.tidyverse.org/</a>
+</div>
+<div class="csl-entry">
+Wickham, H., &amp; Henry, L. (2023b). <em>Purrr: Functional programming tools</em>. <a href="https://purrr.tidyverse.org/">https://purrr.tidyverse.org/</a>
+</div>
+<div class="csl-entry">
+Wickham, H., Hester, J., &amp; Bryan, J. (2023). <em>Readr: Read rectangular text data</em>. <a href="https://readr.tidyverse.org">https://readr.tidyverse.org</a>
+</div>
+<div class="csl-entry">
+Wickham, H., Vaughan, D., &amp; Girlich, M. (2023a). <em>Tidyr: Tidy messy data</em>. <a href="https://tidyr.tidyverse.org">https://tidyr.tidyverse.org</a>
+</div>
+<div class="csl-entry">
+Wickham, H., Vaughan, D., &amp; Girlich, M. (2023b). <em>Tidyr: Tidy messy data</em>. <a href="https://tidyr.tidyverse.org">https://tidyr.tidyverse.org</a>
+</div>
+<div class="csl-entry">
+Xie, Y. (2014). Knitr: A comprehensive tool for reproducible research in <span>R</span>. In V. Stodden, F. Leisch, &amp; R. D. Peng (Eds.), <em>Implementing reproducible computational research</em>. Chapman; Hall/CRC.
+</div>
+<div class="csl-entry">
+Xie, Y. (2015a). <em>Dynamic documents with <span>R</span> and knitr</em> (2nd ed.). Chapman; Hall/CRC. <a href="https://yihui.org/knitr/">https://yihui.org/knitr/</a>
+</div>
+<div class="csl-entry">
+Xie, Y. (2015b). <em>Dynamic documents with <span>R</span> and knitr</em> (2nd ed.). Chapman; Hall/CRC. <a href="http://yihui.org/knitr/">http://yihui.org/knitr/</a>
+</div>
+<div class="csl-entry">
+Xie, Y. (2016). <em>Bookdown: Authoring books and technical documents with <span>R</span> markdown</em>. Chapman; Hall/CRC. <a href="https://bookdown.org/yihui/bookdown">https://bookdown.org/yihui/bookdown</a>
+</div>
+<div class="csl-entry">
+Xie, Y. (2023a). <em>Bookdown: Authoring books and technical documents with r markdown</em>. <a href="https://github.com/rstudio/bookdown">https://github.com/rstudio/bookdown</a>
+</div>
+<div class="csl-entry">
+Xie, Y. (2023b). <em>Knitr: A general-purpose package for dynamic report generation in r</em>. <a href="https://yihui.org/knitr/">https://yihui.org/knitr/</a>
+</div>
+<div class="csl-entry">
+Xie, Y., Allaire, J. J., &amp; Grolemund, G. (2018). <em>R markdown: The definitive guide</em>. Chapman; Hall/CRC. <a href="https://bookdown.org/yihui/rmarkdown">https://bookdown.org/yihui/rmarkdown</a>
+</div>
+<div class="csl-entry">
+Xie, Y., Dervieux, C., &amp; Riederer, E. (2020). <em>R markdown cookbook</em>. Chapman; Hall/CRC. <a href="https://bookdown.org/yihui/rmarkdown-cookbook">https://bookdown.org/yihui/rmarkdown-cookbook</a>
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="el-tidyverso.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="comencemos-a-graficar-con-ggplot2.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
     </div>
   </div>
