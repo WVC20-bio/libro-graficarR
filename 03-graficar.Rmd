@@ -1,3 +1,3 @@
 # ¡Comencemos a graficar con ggplot2!
 
-Hola
+Después de haber aprendido el concepto en que se basa ggplot2, ahora pongamos "las manos en la masa" y comencemos a practicar. Antes de graficar, primero debemos instalar ciertos paquetes que nos servirán para la obtendios de datos, además de utilizar datos ya predeterminados en el mismo R como mtcars, iris, ToothGrowth y PlantGrowth.
