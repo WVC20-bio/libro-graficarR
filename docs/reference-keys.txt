@@ -20,3 +20,10 @@ pages
 metadata-for-sharing
 fig:base
 fig:studio
+el-tidyverso
+readr
+section
+dplyr
+tidyr
+purrr
+tibbles
