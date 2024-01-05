@@ -27,3 +27,6 @@ dplyr
 tidyr
 purrr
 tibbles
+ggplot2
+fig:temple
+comencemos-a-graficar-con-ggplot2

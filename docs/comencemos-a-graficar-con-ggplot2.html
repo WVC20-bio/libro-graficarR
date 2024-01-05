@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Graficando con ggplot2: Ejercicios prácticos</title>
+  <title>Capítulo 3 ¡Comencemos a graficar con ggplot2! | Graficando con ggplot2: Ejercicios prácticos</title>
   <meta name="description" content="Este es un libro práctico para realizar gráficas con el paquete ggplot2." />
   <meta name="generator" content="bookdown 0.37 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Graficando con ggplot2: Ejercicios prácticos" />
+  <meta property="og:title" content="Capítulo 3 ¡Comencemos a graficar con ggplot2! | Graficando con ggplot2: Ejercicios prácticos" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Este es un libro práctico para realizar gráficas con el paquete ggplot2." />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Graficando con ggplot2: Ejercicios prácticos" />
+  <meta name="twitter:title" content="Capítulo 3 ¡Comencemos a graficar con ggplot2! | Graficando con ggplot2: Ejercicios prácticos" />
   
   <meta name="twitter:description" content="Este es un libro práctico para realizar gráficas con el paquete ggplot2." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="hablemos-sobre-r-y-rstudio.html"/>
+<link rel="prev" href="el-tidyverso.html"/>
+<link rel="next" href="referencias.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -114,6 +114,7 @@ div.csl-indent {
 <li class="chapter" data-level="2.5" data-path="el-tidyverso.html"><a href="el-tidyverso.html#tibbles"><i class="fa fa-check"></i><b>2.5</b> tibbles</a></li>
 <li class="chapter" data-level="2.6" data-path="el-tidyverso.html"><a href="el-tidyverso.html#ggplot2"><i class="fa fa-check"></i><b>2.6</b> ggplot2</a></li>
 </ul></li>
+<li class="chapter" data-level="3" data-path="comencemos-a-graficar-con-ggplot2.html"><a href="comencemos-a-graficar-con-ggplot2.html"><i class="fa fa-check"></i><b>3</b> ¡Comencemos a graficar con ggplot2!</a></li>
 <li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referencias</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -135,21 +136,9 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Graficando con ggplot2: Ejercicios prácticos</h1>
-<p class="author"><em>William Vilchez Cruz</em></p>
-<p class="date"><em>2024-01-05</em></p>
-</div>
-<div id="prefacio" class="section level1 unnumbered hasAnchor">
-<h1>Prefacio<a href="index.html#prefacio" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p><img src="_book/docs/portada-fig-1.png" width="300px" height="450px" style="display: block; margin: auto;" /></p>
-<p><strong>Objetivos del libro</strong></p>
-<p>Este libro tiene la intención de servir como guía didáctica y puntual, para generar gráficas comúnmente empleados en el ámbito académico. En sus primeras páginas del libro, se abordará conceptos básicos sobre lenguaje de programación R, tidyverse y su colección de paquetes, sin embargo, a lo largo del libro nos centraremos especialmente en el uso de <code>ggplot2</code>. Por último, si no has trabajado en <code>R</code> antes sugiero encarecidamente la lectura de estos libros:</p>
-<ul>
-<li>Wickham, H., Çetinkaya-Rundel, M., &amp; Grolemund, G. (2023). <em>R for data science</em>. O’Reilly Media, Inc. <a href="https://r4ds.hadley.nz/" class="uri">https://r4ds.hadley.nz/</a></li>
-<li>Peng, R. D. (2016). <em>R programming for data science</em>. Leanpub.http://leanpub.next/rprogramming</li>
-<li>Mendoza, J. (2018). <em>R para principiantes</em>. <a href="https://bookdown.org/jboscomendoza/r-principiantes4/" class="uri">https://bookdown.org/jboscomendoza/r-principiantes4/</a></li>
-</ul>
+<div id="comencemos-a-graficar-con-ggplot2" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Capítulo 3</span> ¡Comencemos a graficar con ggplot2!<a href="comencemos-a-graficar-con-ggplot2.html#comencemos-a-graficar-con-ggplot2" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Después de haber aprendido el concepto en que se basa ggplot2, ahora pongamos “las manos en la masa” y comencemos a practicar. Antes de graficar, primero debemos instalar ciertos paquetes que nos servirán para la obtendios de datos, además de utilizar datos ya predeterminados en el mismo R como mtcars, iris, ToothGrowth y PlantGrowth.</p>
 
 </div>
             </section>
@@ -157,8 +146,8 @@ div.csl-indent {
           </div>
         </div>
       </div>
-
-<a href="hablemos-sobre-r-y-rstudio.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="el-tidyverso.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="referencias.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -189,7 +178,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/index.Rmd",
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/03-graficar.Rmd",
 "text": "Edit"
 },
 "history": {
