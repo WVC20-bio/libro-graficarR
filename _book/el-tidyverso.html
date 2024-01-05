@@ -175,6 +175,7 @@ div.csl-indent {
 <li class="chapter" data-level="2.2" data-path="el-tidyverso.html"><a href="el-tidyverso.html#dplyr"><i class="fa fa-check"></i><b>2.2</b> dplyr</a></li>
 <li class="chapter" data-level="2.3" data-path="el-tidyverso.html"><a href="el-tidyverso.html#tidyr"><i class="fa fa-check"></i><b>2.3</b> tidyr</a></li>
 <li class="chapter" data-level="2.4" data-path="el-tidyverso.html"><a href="el-tidyverso.html#purrr"><i class="fa fa-check"></i><b>2.4</b> purrr</a></li>
+<li class="chapter" data-level="2.5" data-path="el-tidyverso.html"><a href="el-tidyverso.html#tibbles"><i class="fa fa-check"></i><b>2.5</b> tibbles</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referencias</a></li>
 <li class="divider"></li>
@@ -215,11 +216,11 @@ div.csl-indent {
 <p>Ahora hablaremos algunos de estos paquetes, ya que el objetivo del libro no es basarnos en hablar sobre el mundo del tidyverso, si no, de un paquete específico que es ggplot2. En la parte 2 y sección 5 de este libro electrónico (<a href="https://bookdown.org/ansellbr/WEHI_tidyR_course_book/manipulating-data-with-dplyr.html" class="uri">https://bookdown.org/ansellbr/WEHI_tidyR_course_book/manipulating-data-with-dplyr.html</a>), puede ayudarte a entender un poco más sobre su funcionalidad de dichos paquetes, ya mencionados.</p>
 <div id="readr" class="section level2 hasAnchor" number="2.1">
 <h2><span class="header-section-number">2.1</span> readr<a href="el-tidyverso.html#readr" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Este paquete permite importar y exportar distintos tipos de archivos. Si lo menciono primero, es porque lo estaremos utilizando muchas veces para leer nuestros datos. Si queremos importar un dato utilizaremos la función <code>read_"tipo de dato" (csv, tsv, log, etc.)</code>, pero si queremos exportar ese mismo dato utilizaremos la función <code>write_"tipo de dato" (csv, tsv, etc.)</code> <span class="citation">(<a href="#ref-wickham2023r" role="doc-biblioref">Wickham et al., 2023</a>)</span>.</p>
+<p>Este paquete permite importar y exportar distintos tipos de archivos. Si lo menciono primero, es porque lo estaremos utilizando muchas veces para leer nuestros datos. Si queremos importar un dato utilizaremos la función <code>read_"tipo de dato" (csv, tsv, log, etc.)</code>, pero si queremos exportar ese mismo dato utilizaremos la función <code>write_"tipo de dato" (csv, tsv, etc.)</code> <span class="citation">(<a href="#ref-wickham2023r" role="doc-biblioref">Wickham, Çetinkaya-Rundel, et al., 2023</a>)</span>.</p>
 </div>
 <div id="dplyr" class="section level2 hasAnchor" number="2.2">
 <h2><span class="header-section-number">2.2</span> dplyr<a href="el-tidyverso.html#dplyr" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Es un paquete de múltiples funciones que actúan en la manipulación de datos. Dichas funciones se les conocen como “verbos”, que pueden juntarse para obtener un resultado de interés <span class="citation">(<a href="#ref-peng_r_2014" role="doc-biblioref">Peng, 2016</a>; <a href="#ref-wickham2023r" role="doc-biblioref">Wickham et al., 2023</a>; <a href="#ref-purr" role="doc-biblioref">Wickham &amp; Henry, 2023</a>)</span>.</p>
+<p>Es un paquete de múltiples funciones que actúan en la manipulación de datos. Dichas funciones se les conocen como “verbos”, que pueden juntarse para obtener un resultado de interés <span class="citation">(<a href="#ref-peng_r_2014" role="doc-biblioref">Peng, 2016</a>; <a href="#ref-wickham2023r" role="doc-biblioref">Wickham, Çetinkaya-Rundel, et al., 2023</a>)</span>.</p>
 <p>Estos “verbos” son</p>
 <ul>
 <li><strong>select:</strong> Selecciona <code>columnas</code>, es decir las variables de tus datos.</li>
@@ -233,11 +234,15 @@ div.csl-indent {
 </div>
 <div id="tidyr" class="section level2 hasAnchor" number="2.3">
 <h2><span class="header-section-number">2.3</span> tidyr<a href="el-tidyverso.html#tidyr" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Permite crear datos ordenados, siendo las funciones principales <code>pivot_longer</code> y <code>pivot_wider</code>. La primera función transforma un dato ancho a uno largo, en cambio la otra función hace lo contrario.</p>
+<p>Permite crear datos ordenados, siendo las funciones principales <code>pivot_longer</code> y <code>pivot_wider</code>. La primera función transforma un dato ancho a uno largo, en cambio la otra función hace lo contrario<span class="citation">(<a href="#ref-tidyr" role="doc-biblioref">Wickham, Vaughan, et al., 2023</a>)</span>.</p>
 </div>
 <div id="purrr" class="section level2 hasAnchor" number="2.4">
 <h2><span class="header-section-number">2.4</span> purrr<a href="el-tidyverso.html#purrr" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Genera bucles(<code>loops</code>) a travez de la familia de funciones llamadas <strong>map()</strong>.</p>
+<p>Genera bucles(<code>loops</code>) a travez de la familia de funciones llamadas <strong>map()</strong>. Estos bucles ayudan a realizar una acción de interés múltiples veces, generados por la computadora <span class="citation">(<a href="#ref-purr" role="doc-biblioref">Wickham &amp; Henry, 2023</a>)</span>.</p>
+</div>
+<div id="tibbles" class="section level2 hasAnchor" number="2.5">
+<h2><span class="header-section-number">2.5</span> tibbles<a href="el-tidyverso.html#tibbles" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Es un <em>data frame</em> pero modernizado y mejorado. Las ventajas con la data frame es que nunca altera el tipo de entrada, los vectores de tipo cadena de texto no esta obligado a cambiar al tipo factor, muestra las primeras filas y todas las columnas de tus datos, entre otras carácterísticas <span class="citation">(<a href="#ref-wickham2023r" role="doc-biblioref">Wickham, Çetinkaya-Rundel, et al., 2023</a>)</span>.</p>
 
 </div>
 </div>
@@ -257,6 +262,9 @@ Wickham, H., Çetinkaya-Rundel, M., &amp; Grolemund, G. (2023). <em><span class=
 </div>
 <div id="ref-purr" class="csl-entry">
 Wickham, H., &amp; Henry, L. (2023). <em>Purrr: Functional programming tools</em>. <a href="https://purrr.tidyverse.org/">https://purrr.tidyverse.org/</a>
+</div>
+<div id="ref-tidyr" class="csl-entry">
+Wickham, H., Vaughan, D., &amp; Girlich, M. (2023). <em>Tidyr: Tidy messy data</em>. <a href="https://tidyr.tidyverse.org">https://tidyr.tidyverse.org</a>
 </div>
 </div>
             </section>

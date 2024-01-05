@@ -16,7 +16,7 @@ Este paquete permite importar y exportar distintos tipos de archivos. Si lo menc
 
 ## dplyr
 
-Es un paquete de múltiples funciones que actúan en la manipulación de datos. Dichas funciones se les conocen como "verbos", que pueden juntarse para obtener un resultado de interés [@peng_r_2014; @wickham2023r; @purr]. 
+Es un paquete de múltiples funciones que actúan en la manipulación de datos. Dichas funciones se les conocen como "verbos", que pueden juntarse para obtener un resultado de interés [@peng_r_2014; @wickham2023r]. 
 
 Estos "verbos" son 
 
@@ -31,11 +31,16 @@ Estos "verbos" son
 
 ## tidyr
 
-Permite crear datos ordenados, siendo las funciones principales `pivot_longer` y `pivot_wider`. La primera función transforma un dato ancho a uno largo, en cambio la otra función hace lo contrario.
+Permite crear datos ordenados, siendo las funciones principales `pivot_longer` y `pivot_wider`. La primera función transforma un dato ancho a uno largo, en cambio la otra función hace lo contrario[@tidyr].
 
 ## purrr
 
-Genera bucles(`loops`) a travez de la familia de funciones llamadas __map()__.
+Genera bucles(`loops`) a travez de la familia de funciones llamadas __map()__. Estos bucles ayudan a realizar una acción de interés múltiples veces, generados por la computadora [@purr].
+
+## tibbles 
+
+Es un _data frame_ pero modernizado y mejorado. Las ventajas con la data frame es que nunca altera el tipo de entrada, los vectores de tipo cadena de texto no esta obligado a cambiar al tipo factor, muestra las primeras filas y todas las columnas de tus datos, entre otras carácterísticas [@wickham2023r].
+
 
 
 

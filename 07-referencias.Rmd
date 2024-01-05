@@ -13,6 +13,8 @@ Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). _R for data science 
 
 Wickham, H., & Henry, L. (2023). Purrr: Functional programming tools. https://purrr.tidyverse.org/
 
+Wickham, H., Vaughan, D., & Girlich, M. (2023). Tidyr: Tidy messy data. https://tidyr.tidyverse.org
+
 Xie, Yihui. 2015. Dynamic Documents with R and Knitr. 2nd ed. Boca Raton, Florida: Chapman; Hall/CRC. http://yihui.org/knitr/.
 ———. 2023. Bookdown: Authoring Books and Technical Documents with r Markdown. https://github.com/rstudio/bookdown.
 
