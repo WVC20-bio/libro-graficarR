@@ -12,21 +12,50 @@ Ahora hablaremos algunos de estos paquetes, ya que el objetivo del libro no es b
 
 ## readr
 
-Este paquete permite importar y exportar distintos tipos de archivos. Si lo menciono primero, es porque lo estaremos utilizando muchas veces para leer nuestros datos. Si queremos importar un dato utilizaremos la función `read_"el tipo de dato" (csv, tsv, log, etc.)`, pero si queremos exportar ese mismo dato utilizaremos la función `write_"el tipo de dato" (csv, tsv, etc.)` [@wickham2023r].
+Este paquete permite importar y exportar distintos tipos de archivos. Si lo menciono primero, es porque lo estaremos utilizando muchas veces para leer nuestros datos. Si queremos importar un dato utilizaremos la función `read_"tipo de dato" (csv, tsv, log, etc.)`, pero si queremos exportar ese mismo dato utilizaremos la función `write_"tipo de dato" (csv, tsv, etc.)` [@wickham2023r].
 
 ## dplyr
 
-Es un paquete de múltiples funciones que actúan en la manipulación de datos. Dichas funciones se les conocen como "verbos", que pueden juntarse para obtener un resultado de interés[@peng_r_2014]. 
+Es un paquete de múltiples funciones que actúan en la manipulación de datos. Dichas funciones se les conocen como "verbos", que pueden juntarse para obtener un resultado de interés [@peng_r_2014; @wickham2023r; @purr]. 
 
 Estos "verbos" son 
 
-- __select:__ Selecciona columnas, es decir las variables de tus datos.
-- __filter:__ Si el anterior seleccionaba filas, esta función se encarga de seleccionar un subconjunto de filas, según la condición que le indiques. Aquí se utilizan `operadores lógicos` (&,!) y `operadores relacionales` (<, >, ==).
-- __arrange:__ Permite reordenar las filas para cierta variable. 
-- __rename:__
-- __mutate:__
-- __summarise:__
-- __pipeline (%>%):__
+- __select:__ Selecciona `columnas`, es decir las variables de tus datos.
+- __filter:__ Si el anterior seleccionaba `filas`, esta función se encarga de seleccionar un subconjunto de filas, según la condición que le indiques. Aquí se utilizan `operadores lógicos` (&,!) y `operadores relacionales` (<, >, ==).
+- __arrange:__ Permite reordenar las filas para cierta variable. Para que tus filas se ordenen de manera descendente, necistas adicionar el operador `desc()`, y si no agregas nada, el orden de tus datos serán de manera ascendente. 
+- __rename:__ Te permite `cambiar` el nombre de las variables de tus datos originales. 
+- __mutate:__ Permite `agregar` variables a partir de otra variable original de tus datos. Esta es una de las funciones de mucha utilidad.
+- __summarise:__ Nos permite generar `datos estadísticos` como la media(mean), desviación estándar(sd) a partir de tus datos originales. 
+- __pipeline (%>% o |> ):__ Este operador te permite `enlazar` los "verbos" de dplyr.   
+
+
+## tidyr
+
+Permite crear datos ordenados, siendo las funciones principales `pivot_longer` y `pivot_wider`. La primera función transforma un dato ancho a uno largo, en cambio la otra función hace lo contrario.
+
+## purrr
+
+Genera bucles(`loops`) a travez de la familia de funciones llamadas __map()__.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

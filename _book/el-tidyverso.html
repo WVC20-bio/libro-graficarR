@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="hablemos-sobre-r-y-rstudio.html"/>
-<link rel="next" href="parts.html"/>
+<link rel="next" href="referencias.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -173,24 +173,8 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="2.1" data-path="el-tidyverso.html"><a href="el-tidyverso.html#readr"><i class="fa fa-check"></i><b>2.1</b> readr</a></li>
 <li class="chapter" data-level="2.2" data-path="el-tidyverso.html"><a href="el-tidyverso.html#dplyr"><i class="fa fa-check"></i><b>2.2</b> dplyr</a></li>
-</ul></li>
-<li class="chapter" data-level="3" data-path="parts.html"><a href="parts.html"><i class="fa fa-check"></i><b>3</b> Parts</a></li>
-<li class="chapter" data-level="4" data-path="footnotes-and-citations.html"><a href="footnotes-and-citations.html"><i class="fa fa-check"></i><b>4</b> Footnotes and citations</a>
-<ul>
-<li class="chapter" data-level="4.1" data-path="footnotes-and-citations.html"><a href="footnotes-and-citations.html#footnotes"><i class="fa fa-check"></i><b>4.1</b> Footnotes</a></li>
-<li class="chapter" data-level="4.2" data-path="footnotes-and-citations.html"><a href="footnotes-and-citations.html#citations"><i class="fa fa-check"></i><b>4.2</b> Citations</a></li>
-</ul></li>
-<li class="chapter" data-level="5" data-path="blocks.html"><a href="blocks.html"><i class="fa fa-check"></i><b>5</b> Blocks</a>
-<ul>
-<li class="chapter" data-level="5.1" data-path="blocks.html"><a href="blocks.html#equations"><i class="fa fa-check"></i><b>5.1</b> Equations</a></li>
-<li class="chapter" data-level="5.2" data-path="blocks.html"><a href="blocks.html#theorems-and-proofs"><i class="fa fa-check"></i><b>5.2</b> Theorems and proofs</a></li>
-<li class="chapter" data-level="5.3" data-path="blocks.html"><a href="blocks.html#callout-blocks"><i class="fa fa-check"></i><b>5.3</b> Callout blocks</a></li>
-</ul></li>
-<li class="chapter" data-level="6" data-path="sharing-your-book.html"><a href="sharing-your-book.html"><i class="fa fa-check"></i><b>6</b> Sharing your book</a>
-<ul>
-<li class="chapter" data-level="6.1" data-path="sharing-your-book.html"><a href="sharing-your-book.html#publishing"><i class="fa fa-check"></i><b>6.1</b> Publishing</a></li>
-<li class="chapter" data-level="6.2" data-path="sharing-your-book.html"><a href="sharing-your-book.html#pages"><i class="fa fa-check"></i><b>6.2</b> 404 pages</a></li>
-<li class="chapter" data-level="6.3" data-path="sharing-your-book.html"><a href="sharing-your-book.html#metadata-for-sharing"><i class="fa fa-check"></i><b>6.3</b> Metadata for sharing</a></li>
+<li class="chapter" data-level="2.3" data-path="el-tidyverso.html"><a href="el-tidyverso.html#tidyr"><i class="fa fa-check"></i><b>2.3</b> tidyr</a></li>
+<li class="chapter" data-level="2.4" data-path="el-tidyverso.html"><a href="el-tidyverso.html#purrr"><i class="fa fa-check"></i><b>2.4</b> purrr</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referencias</a></li>
 <li class="divider"></li>
@@ -231,26 +215,37 @@ div.csl-indent {
 <p>Ahora hablaremos algunos de estos paquetes, ya que el objetivo del libro no es basarnos en hablar sobre el mundo del tidyverso, si no, de un paquete específico que es ggplot2. En la parte 2 y sección 5 de este libro electrónico (<a href="https://bookdown.org/ansellbr/WEHI_tidyR_course_book/manipulating-data-with-dplyr.html" class="uri">https://bookdown.org/ansellbr/WEHI_tidyR_course_book/manipulating-data-with-dplyr.html</a>), puede ayudarte a entender un poco más sobre su funcionalidad de dichos paquetes, ya mencionados.</p>
 <div id="readr" class="section level2 hasAnchor" number="2.1">
 <h2><span class="header-section-number">2.1</span> readr<a href="el-tidyverso.html#readr" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Este paquete permite importar y exportar distintos tipos de archivos. Si lo menciono primero, es porque lo estaremos utilizando muchas veces para leer nuestros datos. Si queremos importar un dato utilizaremos la función <code>read_"el tipo de dato" (csv, tsv, log, etc.)</code>, pero si queremos exportar ese mismo dato utilizaremos la función <code>write_"el tipo de dato" (csv, tsv, etc.)</code> <span class="citation">(<a href="#ref-wickham2023r" role="doc-biblioref">Wickham et al., 2023</a>)</span>.</p>
+<p>Este paquete permite importar y exportar distintos tipos de archivos. Si lo menciono primero, es porque lo estaremos utilizando muchas veces para leer nuestros datos. Si queremos importar un dato utilizaremos la función <code>read_"tipo de dato" (csv, tsv, log, etc.)</code>, pero si queremos exportar ese mismo dato utilizaremos la función <code>write_"tipo de dato" (csv, tsv, etc.)</code> <span class="citation">(<a href="#ref-wickham2023r" role="doc-biblioref">Wickham et al., 2023</a>)</span>.</p>
 </div>
 <div id="dplyr" class="section level2 hasAnchor" number="2.2">
 <h2><span class="header-section-number">2.2</span> dplyr<a href="el-tidyverso.html#dplyr" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Es un paquete de múltiples funciones que actúan en la manipulación de datos. Dichas funciones se les conocen como “verbos”, que pueden juntarse para obtener un resultado de interés.</p>
+<p>Es un paquete de múltiples funciones que actúan en la manipulación de datos. Dichas funciones se les conocen como “verbos”, que pueden juntarse para obtener un resultado de interés <span class="citation">(<a href="#ref-peng_r_2014" role="doc-biblioref">Peng, 2016</a>; <a href="#ref-wickham2023r" role="doc-biblioref">Wickham et al., 2023</a>; <a href="#ref-purr" role="doc-biblioref">Wickham &amp; Henry, 2023</a>)</span>.</p>
 <p>Estos “verbos” son</p>
 <ul>
-<li><strong>select:</strong> Selecciona columnas, es decir las variables de tus datos.</li>
-<li><strong>filter:</strong> Si el anterior seleccionaba filas, esta función se encarga de seleccionar un subconjunto de filas, según la condición que le indiques. Aquí se utilizan <code>operadores lógicos</code> (&amp;,!) y <code>operadores relacionales</code> (&lt;, &gt;, ==).</li>
-<li><strong>arrange:</strong> Permite reordenar las filas para cierta variable.</li>
-<li><strong>rename:</strong></li>
-<li><strong>mutate:</strong></li>
-<li><strong>summarise:</strong></li>
-<li><strong>pipeline (%&gt;%):</strong></li>
+<li><strong>select:</strong> Selecciona <code>columnas</code>, es decir las variables de tus datos.</li>
+<li><strong>filter:</strong> Si el anterior seleccionaba <code>filas</code>, esta función se encarga de seleccionar un subconjunto de filas, según la condición que le indiques. Aquí se utilizan <code>operadores lógicos</code> (&amp;,!) y <code>operadores relacionales</code> (&lt;, &gt;, ==).</li>
+<li><strong>arrange:</strong> Permite reordenar las filas para cierta variable. Para que tus filas se ordenen de manera descendente, necistas adicionar el operador <code>desc()</code>, y si no agregas nada, el orden de tus datos serán de manera ascendente.</li>
+<li><strong>rename:</strong> Te permite <code>cambiar</code> el nombre de las variables de tus datos originales.</li>
+<li><strong>mutate:</strong> Permite <code>agregar</code> variables a partir de otra variable original de tus datos. Esta es una de las funciones de mucha utilidad.</li>
+<li><strong>summarise:</strong> Nos permite generar <code>datos estadísticos</code> como la media(mean), desviación estándar(sd) a partir de tus datos originales.</li>
+<li><strong>pipeline (%&gt;% o |&gt; ):</strong> Este operador te permite <code>enlazar</code> los “verbos” de dplyr.</li>
 </ul>
+</div>
+<div id="tidyr" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> tidyr<a href="el-tidyverso.html#tidyr" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Permite crear datos ordenados, siendo las funciones principales <code>pivot_longer</code> y <code>pivot_wider</code>. La primera función transforma un dato ancho a uno largo, en cambio la otra función hace lo contrario.</p>
+</div>
+<div id="purrr" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> purrr<a href="el-tidyverso.html#purrr" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Genera bucles(<code>loops</code>) a travez de la familia de funciones llamadas <strong>map()</strong>.</p>
 
 </div>
 </div>
 <h3>References</h3>
 <div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
+<div id="ref-peng_r_2014" class="csl-entry">
+Peng, R. D. (2016). <em><span class="nocase">R programming for data science</span></em> (pp. 86–181). Leanpub. <a href="http://leanpub.next/rprogramming">http://leanpub.next/rprogramming</a>
+</div>
 <div id="ref-tidy-data" class="csl-entry">
 Wickham, H. (2014). Tidy data. <em>The Journal of Statistical Software</em>, <em>59</em>. <a href="http://www.jstatsoft.org/v59/i10/">http://www.jstatsoft.org/v59/i10/</a>
 </div>
@@ -260,6 +255,9 @@ Wickham, H., Averick, M., Bryan, J., Chang, W., McGowan, L., François, R., Grol
 <div id="ref-wickham2023r" class="csl-entry">
 Wickham, H., Çetinkaya-Rundel, M., &amp; Grolemund, G. (2023). <em><span class="nocase">R for data science</span></em> (Second). " O’Reilly Media, Inc.". <a href="https://r4ds.hadley.nz/">https://r4ds.hadley.nz/</a>
 </div>
+<div id="ref-purr" class="csl-entry">
+Wickham, H., &amp; Henry, L. (2023). <em>Purrr: Functional programming tools</em>. <a href="https://purrr.tidyverse.org/">https://purrr.tidyverse.org/</a>
+</div>
 </div>
             </section>
 
@@ -267,7 +265,7 @@ Wickham, H., Çetinkaya-Rundel, M., &amp; Grolemund, G. (2023). <em><span class=
         </div>
       </div>
 <a href="hablemos-sobre-r-y-rstudio.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="parts.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="referencias.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -24,3 +24,5 @@ el-tidyverso
 readr
 section
 dplyr
+tidyr
+purrr
